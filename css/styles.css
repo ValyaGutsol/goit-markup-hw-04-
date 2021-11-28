@@ -142,6 +142,17 @@ html {
 .header-mail:focus {
   color: var(--accent-color);
 }
+.contact-link
+.contact-icon {
+  margin-right: 10px;
+  stroke: #03a9f4;
+  fill: currentColor;
+}
+.contact-icon {
+  margin-right:10px;
+  stroke: #03a9f4;
+  fill: currentColor;
+}
 /*   HEADER PORTFOlIO    */
 .header-logo {
   margin-right: auto;
