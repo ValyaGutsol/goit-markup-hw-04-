@@ -389,10 +389,10 @@ html {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   }
-  .masters-social-list{
+    .masters-social-list{
     display: flex;
     justify-content: center;
-  
+    align-items: center;
   }
   .masters-social-item{
     width: 44px;
@@ -401,27 +401,37 @@ html {
   .masters-social-item +.masters-social-item{
     margin: 10px;
 }
-
     .masters-social-link{
   width: 100%;
   height: 100%;
   border-radius:50% ;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: #03a9f4;
+  color: #ffffff;
 }
-  .masters-social-link{
+  .masters-social-icon {
     fill: #ffffff;
   }
-  .masters-social-icon:hover,
-  .masters-social-icon:focus{
-  fill:var(--accent-color) ;
+    .masters-social-icon {
+    fill: currentColor;
   }
+ /* .masters-social-icon:hover
+  .masters-social-icon:focus {
+  fill: var(--accent-color);
+  }*/
 
   .masters-social-link:hover,
-  .masters-social-link:focus{
-    background-color: teal;
-  }
+  .masters-social-link:focus {
+background-color:teal ;
+}
+  .masters-social-link:hover.masters-social-icon,
+  .masters-social-link:focus.masters-social-icon {
+  fill: var(--accent-color) ;
+} 
+
   .masters-member {
   text-align: center;
 }
