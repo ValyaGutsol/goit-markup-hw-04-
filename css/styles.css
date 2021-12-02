@@ -293,6 +293,7 @@ html {
 .about-container {
   background-color: #ccc;
 }
+
 .about-list {
   margin: 0px;
   padding: 0px;
@@ -302,6 +303,25 @@ html {
 }
 .about-item:not(:last-child) {
   margin-right: 30px;
+}
+.features-icon{
+  display: flex;
+  list-style: none;
+  justify-content: center; 
+}
+
+.features-icon:hover,
+  .features-icon:focus {
+  color: #212121; 
+  fill: #2196f3;
+}
+.features-icon:hover.socials-icon,
+  .features-icon:focus.socials-icon{
+  fill: var(--accent-color) ;
+} 
+.socials-icon:hover,
+.socials-icon:focus {
+color: #AFB1B8;
 }
 
 .about-title {
@@ -409,8 +429,8 @@ html {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #03a9f4;
-  color: #ffffff;
+ /* background-color: #03a9f4;*/
+  color: #AFB1B8;
 }
   .masters-social-icon {
     fill: #ffffff;
@@ -418,21 +438,19 @@ html {
     .masters-social-icon {
     fill: currentColor;
   }
- /* .masters-social-icon:hover
+  .masters-social-icon:hover
   .masters-social-icon:focus {
+    background: #2196f3;
   fill: var(--accent-color);
-  }*/
+  }
 
   .masters-social-link:hover,
   .masters-social-link:focus {
-background-color:teal ;
+    color: #212121;
+  background-color:teal ;
 }
-  .masters-social-link:hover.masters-social-icon,
-  .masters-social-link:focus.masters-social-icon {
-  fill: var(--accent-color) ;
-} 
-
   .masters-member {
+
   text-align: center;
 }
   .masters-member {
@@ -453,6 +471,13 @@ background-color:teal ;
   margin-top: 15px;
   text-align: center;
   margin: 16px;
+}
+
+.customers {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-title-color);
 }
 
 /* Портфолио  презентация*/
