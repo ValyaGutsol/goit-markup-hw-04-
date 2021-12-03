@@ -472,13 +472,34 @@ color: #AFB1B8;
   text-align: center;
   margin: 16px;
 }
-
+.section-customers{
+  padding-top: none;
+  padding-bottom: 94px
+}
+.container-customers {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .customers {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-title-color);
+  margin-left:94px ;
 }
+.customers-icon {
+  display: flex;
+  list-style: none;
+  justify-content: center; 
+}
+  .customers-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* Портфолио  презентация*/
 
