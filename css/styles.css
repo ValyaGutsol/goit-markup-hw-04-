@@ -338,6 +338,9 @@ color: #AFB1B8;
   font-weight: 400;
   color: var(--main-text-color);
 }
+
+
+  
 /* ---  Примеры работ---*/
 
 .section-gallery {
@@ -421,7 +424,7 @@ color: #AFB1B8;
   .masters-social-item +.masters-social-item{
     margin: 10px;
 }
-    .masters-social-link{
+  .masters-social-link{
   width: 100%;
   height: 100%;
   border-radius:50% ;
@@ -433,10 +436,7 @@ color: #AFB1B8;
   color: #AFB1B8;
 }
   .masters-social-icon {
-    fill: #ffffff;
-  }
-    .masters-social-icon {
-    fill: currentColor;
+    fill: #AFB1B8;
   }
   .masters-social-icon:hover
   .masters-social-icon:focus {
@@ -448,9 +448,18 @@ color: #AFB1B8;
   .masters-social-link:focus {
     color: #212121;
   background-color:teal ;
-}
-  .masters-member {
 
+}
+    /* .masters-social-icon {
+    fill: currentColor;
+  }*/
+  .masters-social{
+    width: 20px;
+    height: 20pt;
+    fill: #2196f3;
+  }
+  
+  .masters-member {
   text-align: center;
 }
   .masters-member {
@@ -483,23 +492,50 @@ color: #AFB1B8;
   padding-left: 15px;
   padding-right: 15px;
 }
-.customers {
+.customers-title {
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 2.38;
   text-align: center;
+  margin-bottom: 50px;
   color: var(--secondary-title-color);
-  margin-left:94px ;
+}
+
+.customers-item{
+  width: 170px;
+  height: 92px; ;
+  border-radius: 4px;
+  background-color:#E5E5E5 ;
+  margin-right: 30px; 
 }
 .customers-icon {
   display: flex;
   list-style: none;
   justify-content: center; 
+  fill:#AFB1B8 ;
 }
+.customers-icon-color{
+  fill:#2196F3 ;
+  border:rgba(175, 177, 184, 1);
+
+}
+  
   .customers-list{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /*list-style: none;*/
+    justify-content: center; 
   }
+
+  .customers-link:hover .customers-icon,
+  .customers-link:focus .customers-icon {
+  fill: var(--accent-color);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border: var(--accent-color) 1px solid;
+}
+
 
 /* Портфолио  презентация*/
 
@@ -638,6 +674,7 @@ color: #AFB1B8;
   color: #757575;
 }
 
+
 /*---ПОДВАЛ---*/
 
 .footer {
@@ -719,7 +756,42 @@ color: #AFB1B8;
   line-height: 10px;
 }
 
-.footer-tel link {
+.footer-tel-link {
   margin-bottom: 60px;
   margin-top: 15px;
+}
+
+.footer-social-link{
+  color: #AFB1B8; 
+  fill: var(--main-title-color);
+}
+
+.second-footer {
+  display: flex;
+  align-items: baseline;
+}
+.second-footer-title {
+  color: var(--main-title-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.second-footer-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.second-footer-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+.second-footer-icons{
+  color: #E5E5E5;
 }
