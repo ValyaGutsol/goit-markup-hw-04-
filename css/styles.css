@@ -85,9 +85,8 @@ html {
 
 /*-----HEADER------*/
 
-.header.container-navigation{
-  width: 1200px;
-  display: flex;
+.container  {
+  width: 1200px ;
   align-items: center;
 }
 .header {
@@ -167,7 +166,7 @@ html {
   margin-right: auto;
 }
 .container-header {
-  width: 1200px;
+/*  width: 1200px;*/
   display: flex;
   align-items: center;
 }
@@ -207,9 +206,7 @@ html {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-
 }
-
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
@@ -288,6 +285,7 @@ html {
   padding-bottom: 0px;
 }
 .about-container {
+  background-color: #E5E5E5;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -300,9 +298,6 @@ html {
   padding: 0px;
   list-style: none;
   display: flex;
-  margin-right:-30px; 
-}
-.about-item{
   flex-basis: calc(100% / 4 - 30px); 
 }
 .about-item:not(:last-child) {
@@ -382,6 +377,7 @@ color: #AFB1B8;
 .section-masters  {
   padding-top: none;
   padding-bottom: 94px;
+  fill:#F5F4FA ;
 }
 .container-masters  {
   width: 1200px;
@@ -407,12 +403,12 @@ color: #AFB1B8;
   margin-right: 30px;
   flex-basis: calc(100% / 4 -30px);
 }
-.masters-item.content {
+.masters-item {
   padding-top: 30px;
-  padding-bottom: 30px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px ;
+  
   }
     .masters-social-list{
     display: flex;
@@ -467,10 +463,10 @@ color: #AFB1B8;
   color: var(--main-text-color);
 }
 .masters-text {
-  font-weight: 400;
-  margin-top: 15px;
-  text-align: center;
-  margin: 16px;
+font-weight: 400;
+margin-top: 15px;
+text-align: center;
+padding-bottom: 30px;
 }
 .section-customers{
   padding-top: none;
@@ -497,7 +493,7 @@ color: #AFB1B8;
   height: 92px; ;
   border-radius: 4px;
   background-color:#E5E5E5 ;
-margin-right: 30px;
+  margin-right: 30px;
 }
 .customers-item{
   border:rgba(175, 177, 184, 1);
@@ -526,8 +522,6 @@ margin-right: 30px;
 .customers-link:focus {
   border: var(--accent-color) 1px solid;
 }
-
-
 
 /* Портфолио  презентация*/
 
@@ -683,10 +677,8 @@ margin-right: 30px;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
-  align-items: baseline;
 }
-.container {
+  .container-footer {
   width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -702,13 +694,15 @@ margin-right: 30px;
   margin-top: 10px;
   padding-top: 60px;
   margin-bottom: 30px;
-
 }
 
 .footer-list:hover,
 .footer-list:focus {
   color: var(--accent-color);
   color: #000;
+}
+.footer-contacts {
+margin-top: 20px;
 }
 .footer-contacts:hover,
 .footer-address:hover,
@@ -781,7 +775,7 @@ margin-right: 30px;
 .container-footer{
 width: 200px;
   height: 80px;
-  margin: 70px;
+  margin-left: 70px;
 }
 
 .second-footer {
@@ -817,6 +811,7 @@ width: 200px;
   width: 44px;
   height: 44px;
   margin-left: 10px;
+
 }
 
 .footer-social-link {
