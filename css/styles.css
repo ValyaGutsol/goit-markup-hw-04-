@@ -407,7 +407,7 @@ color: #AFB1B8;
   padding-top: 30px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px ;
+  border-radius:  4px 4px ;
   
   }
     .masters-social-list{
@@ -496,17 +496,28 @@ padding-bottom: 30px;
   margin-right: 30px;
 }
 .customers-item{
+  font-size: 5px;
+  line-height: 0.06px;
+  align:left;
+  fill:#AFB1B8; ;
   border:rgba(175, 177, 184, 1);
 }
 /*
   fill: var(--accent-color); 
 }*/
-.customers-icon {
+
+.customers-icon{
+  width: 170px;
+  height: 92px;
   display: flex;
   list-style: none;
-  justify-content: center; 
+  justify-content: center;  
+  border-radius: 4px;
+  background-color:#E5E5E5 ;
+  margin-right: 30px; 
   fill:#AFB1B8 ;
 }
+
 
   .customers-list{
     display: flex;
@@ -639,7 +650,7 @@ padding-bottom: 30px;
   color: var(--secondary-title-color);
 }
 
-.cards-name {
+.card-item {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -651,6 +662,12 @@ padding-bottom: 30px;
     1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
 }
+.card-item :hover,
+.card-item :focus {
+  background: #ffffff;;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .cards-name-card {
   padding-top: 20px;
@@ -660,8 +677,8 @@ padding-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+ /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);*/
   border-radius: 4px;
 }
 .card-text {
@@ -674,12 +691,14 @@ padding-bottom: 30px;
 /*---ПОДВАЛ---*/
 
 .footer {
+  width: 1600px;
+  height:300px ;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
   .container-footer {
-  width: 1200px;
+  
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -768,7 +787,7 @@ margin-top: 20px;
   margin-bottom: 60px;
   margin-top: 15px;
 }
-.container-contacts{
+/*.container-contacts{
   width: 230px;
   height: 80px;
 }
@@ -780,9 +799,8 @@ width: 200px;
 
 .second-footer {
   width: 200px;
-  height: 80px;
+  height: 80px;*/
 
-}
 .second-footer-title {
   color: var(--main-title-color);
   font-style: normal;
