@@ -111,20 +111,16 @@ html {
   display: flex;
 }
 .header-item:not(:last-child) {
-  padding: left 30px;
-}
-.header-accent {
-  color: var(--secondary-text-color);
+padding-left: 30px;
 }
 
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
-
 .header-ring {
   margin-left: auto;
-  margin-right: 30px;
+  margin-right:avto;
   display: flex;
   align-items: center;
 }
@@ -145,11 +141,13 @@ html {
 
 .contact-link {
   margin-right: 10px;
-  stroke:#2196F3;
+  margin-left: 10px;
+ /* stroke:#2196F3;*/
   fill: currentColor;
 }
 .contact-link:hover,
 .contact-link:focus {
+  color: var(--secondary-text-color);
   color: var(--accent-color);
 }
 .contact-tel {
