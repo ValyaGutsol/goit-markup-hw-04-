@@ -17,7 +17,7 @@ body {
   --secondary-title-color: #212121;
   --main-text-color: #757575;
   --secondary-text-color: #000000;
-  --accent-color: #2196f3;
+  --accent-color: #2196F3;
   --card-set-gar: 30px;
 }
 
@@ -114,10 +114,6 @@ html {
 padding-left: 30px;
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
 .header-ring {
   margin-left: auto;
   margin-right:avto;
@@ -136,26 +132,31 @@ padding-left: 30px;
 }
 .header-mail:hover,
 .header-mail:focus {
-  fill: #03a9f4;
-  color: var(--secondary-text-color);
+  color: var(--accent-color); ;
+  color:rgba(117, 117, 117, 1) ;
 }
 
 .contact-link {
   margin-right: 10px;
   margin-left: 10px;
- /* stroke:#2196F3;*/
   fill: currentColor;
+  
 }
 .contact-link:hover,
 .contact-link:focus {
-  fill: #03a9f4;
-  color: var(--secondary-text-color);
+    color: var(--accent-color); 
   
 }
 .contact-tel {
+  width: 16px;
+  height: 12px;
   margin-right:10px;
-  stroke: #03a9f4;
+    color: var(--accent-color); 
   fill: currentColor;
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color); 
 }
 .contact-mail-link {
   margin-left:2px ;
@@ -243,14 +244,26 @@ padding-left: 30px;
 }
 
 .hero-buton {
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  vertical-align: center;
-  letter-spacing: 0.06em;
-  color: var(--main-title-color);
+display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    border: none;
 }
+
 .hero-button.btn {
   font-weight: 700;
   display: flex;
@@ -274,6 +287,7 @@ padding-left: 30px;
   color: var(--secondary-text-color);
 }
 
+
 /*--Контейнер преемущества работы -*/
 
 .section {
@@ -285,12 +299,27 @@ padding-left: 30px;
   padding-bottom: 0px;
 }
 .about-container {
-  background-color: #E5E5E5;
+
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px 
+}
+
+.features-icon{
+  width: 270px;
+  height: 120px;
+  display: flex;
+  list-style: none;
+  justify-content: center;  
+  fill: currentColor;
+  background-color: #ffffff;
+  margin-right: 30px; 
+  margin-bottom: 25px;
+  border: #225196f3;
+  border-radius: 4px;
+  list-style: none;
 }
 
 .about-list {
@@ -304,24 +333,13 @@ padding-left: 30px;
   margin-right: 30px;
 }
 
-.features-icon{
-  display: flex;
-  list-style: none;
-  justify-content: center; 
-}
-
-.features-icon:hover,
-  .features-icon:focus {
-  color: #212121; 
-  fill: #2196f3;
-}
 .features-icon:hover.socials-icon,
-  .features-icon:focus.socials-icon{
-  fill: var(--accent-color) ;
+.features-icon:focus.socials-icon{
+  color: var(--accent-color) ;
 } 
 .socials-icon:hover,
 .socials-icon:focus {
-color: #AFB1B8;
+color:var(--accent-color)
 }
 
 .about-title {
@@ -515,7 +533,7 @@ padding-bottom: 30px;
   fill: currentColor;
  /* background-color:#E5E5E5 ;*/
   margin-right: 30px; 
-  fill:#AFB1B8 ;
+  fill:#AFB1B8 ; 
 }
  .customers-link{
   display: flex;
@@ -533,6 +551,7 @@ padding-bottom: 30px;
     height: 1em;
     fill: currentColor;
 }
+
   .customers-list{
     display: flex;
     justify-content: center; 
@@ -549,7 +568,7 @@ padding-bottom: 30px;
   border: var(--accent-color) 1px solid;
 }
 .customers-icon-logo3{
-  border:#2196F3 ;
+  border:var(--accent-color); 
   fill:#2196F3 ;
 }
 .icon-logo21{
@@ -600,7 +619,7 @@ padding-bottom: 30px;
 .portfolio-button {
   display: block;
   color: #212121;
-  background-color: #2196f3;
+  background-color: var(--accent-color); 
   font-style: normal;
   cursor: pointer;
   border: transparent;
@@ -617,6 +636,7 @@ padding-bottom: 30px;
 .portfolio-button:focus {
   color: rgba(245, 244, 250, 1);
   background-color: var(--accent-color);
+
 }
 .portfolio-buttons {
   color: #212121;
@@ -631,11 +651,15 @@ padding-bottom: 30px;
   letter-spacing: 0.03em;
   line-height: 1.62;
   padding: 6px 22px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+
 
 .portfolio-buttons:hover,
 .portfolio-buttons:focus {
-  color: #2196f3;
+  color: var(--accent-color); ;
   color: rgba(245, 244, 250, 1);
   color: var(--main-title-color);
   background-color: var(--accent-color);
@@ -685,25 +709,35 @@ padding-bottom: 30px;
   padding-right: 24px;
   background: #ffffff;
 }
-.card-item-bg :hover,
-.card-item-bg :focus {
+.card-item :hover,
+.card-item :focus {
+  color: #ffffff;
+  background: var(--accent-color); 
   background: #ffffff;;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-
-}
-
-.cards-name-card {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
+}
+.card-item-bg :hover,
+.card-item-bg :focus {
+color: #ffffff;
+  background: var(--accent-color); 
+  background: #ffffff;;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+}
+
+.cards-name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #ffffff;
+  border: 1px solid #eeeeee;
+ 
 }
 .card-text {
   font-size: 16px;
@@ -741,9 +775,8 @@ padding-bottom: 30px;
 margin-top: 20px;
 }
 .footer-contacts:hover,
-.footer-address:hover,
-:focus {
-  color: #2196f3;
+.footer-address:focus {
+  color: var(--accent-color); 
   color: rgba(245, 244, 250, 1);
   color: var(--main-title-color);
 }
@@ -772,15 +805,14 @@ margin-top: 20px;
 }
 .footer-address:hover,
 .footer-address:focus {
-  color: #2196f3;
+  color: var(--accent-color); 
   margin-top:36px ;
-  /* color: rgba(245, 244, 250, 1);*/
   color: var(--accent-color);
 }
 
 .footer-mail:hover,
 .footer-mail:focus {
-  color: #2196f3;
+  color: var(--accent-color); 
   color: rgba(245, 244, 250, 1);
   color: var(--accent-color);
 }
@@ -851,8 +883,7 @@ margin-left: 70px;
 }
   .second-footer-icon-color{
   fill: currentColor;
-    /*fill:#FFFFFF ;*/
-   /* background-color: #2196f3;*/
+
   }
   .footer-social-link-color{
   width: 100%;
