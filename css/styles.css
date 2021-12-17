@@ -130,22 +130,21 @@ padding-left: 30px;
   color: var(--main-text-color);
   margin-left: 50px;
 }
-.header-mail:hover,
+/*.header-mail:hover,
 .header-mail:focus {
-  color: var(--accent-color); ;
   color:rgba(117, 117, 117, 1) ;
-}
+}*/
 
 .contact-link {
   margin-right: 10px;
   margin-left: 10px;
   fill: currentColor;
-  
+ 
 }
 .contact-link:hover,
 .contact-link:focus {
     color: var(--accent-color); 
-  
+  fill: currentColor;
 }
 .contact-tel {
   width: 16px;
@@ -789,7 +788,6 @@ margin-top: 20px;
 }
 
 .footer-item {
-  display: flex;
   margin-top: 10px;
 }
 
