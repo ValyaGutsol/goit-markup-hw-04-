@@ -437,6 +437,10 @@ color:var(--accent-color)
   padding-left: 15px;
   padding-right: 15px;
 }
+.masters-name-professions{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .masters-title {
   font-size: 36px;
   line-height: 1.17;
@@ -459,8 +463,9 @@ color:var(--accent-color)
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius:  4px 4px ;
-  
   }
+  
+
     .masters-social-list{
     display: flex;
     justify-content: center;
@@ -502,6 +507,7 @@ color:var(--accent-color)
   .masters-member {
   text-align: center;
   padding-top: 30px;
+ 
 }
   .masters-member {
   font-weight: 500;
@@ -716,7 +722,7 @@ text-align: center;
   color: var(--main-title-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);*/
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list .item:not(:last-child) {
